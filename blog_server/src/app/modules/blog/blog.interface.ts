@@ -12,7 +12,8 @@ export type TBlog = {
   excerpt?: string;
   status: BlogStatus;
   tags?: string[];
-  publishedAt?: Date;
+  author:string;
+  publishedAt?:String;
   createdAt: Date;
   updatedAt: Date;
 };

@@ -7,11 +7,11 @@ import { BlogController } from "./blog.controller";
 
 const router = Router();
 router.post(
-  "/create_blog",
+  "/posts",
   validateRequest(blogSchema),
   BlogController.createBlogIntoDB
 );
-router.get("/blogs", BlogController.getAllBlogFromDB);
-router.get("/blog/:id", BlogController.getSingleBlogFromDB);
+router.get("/posts", BlogController.getAllBlogFromDB);
+router.get("/posts/:id", BlogController.getSingleBlogFromDB);
 
 export const BlogRouter = router;

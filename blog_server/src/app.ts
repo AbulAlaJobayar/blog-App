@@ -20,7 +20,7 @@ app.use(
   }),
 );
 
-app.use('/api/v1',BlogRouter);
+app.use('/api',BlogRouter);
 
 app.get('/', (req:Request, res:Response) => {
   res.send('welcome to blog api!');

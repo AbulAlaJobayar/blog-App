@@ -36,8 +36,11 @@ const BlogSchema: Schema<TBlog> = new Schema(
       type: [String],
     },
     publishedAt: {
-      type: Date,
+      type: String,
     },
+    author:{
+      type:String
+    }
   },
   { timestamps: true }
 );

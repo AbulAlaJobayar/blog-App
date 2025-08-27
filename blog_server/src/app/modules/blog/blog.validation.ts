@@ -35,6 +35,7 @@ export const blogSchema = z.object({
     .max(10, "No more than 10 tags")
     .optional(),
 
-  publishedAt: z.date().optional(),
+  publishedAt: z.string().optional(),
+  author:z.string()
 
 })
